@@ -45,7 +45,11 @@ public class BreakAPlate {
 		
 		JButton PA = new JButton("Play Again");
 		PA.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) 
+			{
+				
+				
+				
 			}
 		});
 		PA.setBounds(172, 142, 89, 23);
