@@ -17,6 +17,15 @@ public class BreakAPlate {
 		
 	private JFrame frame;
 
+	
+	ImageIcon plates = new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\plates.gif");
+	ImageIcon placeholder = new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\placeholder.gif");
+	ImageIcon plates_all_broken = new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\plates_all_broken.gif");
+	ImageIcon tiger_plush = new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\tiger_plush.gif");
+	ImageIcon plates_two_broken = new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\plates_two_broken.gif");
+	ImageIcon sticker = new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\sticker.gif");
+	
+	
 	/**
 	 * Launch the application.
 	 */
@@ -50,11 +59,11 @@ public class BreakAPlate {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel plate = new JLabel(new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\plates.gif"));
+		JLabel plate = new JLabel(plates);
 		plate.setBounds(43, 11, 496, 166);
 		frame.getContentPane().add(plate);
 		
-		JLabel prize = new JLabel(new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\placeholder.gif"));
+		JLabel prize = new JLabel(placeholder);
 		prize.setBounds(94, 269, 394, 136);
 		frame.getContentPane().add(prize);
 		
@@ -80,15 +89,15 @@ public class BreakAPlate {
 				
 				if (n == 2) 
 				{
-					plate.setIcon(new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\plates_all_broken.gif"));
-					prize.setIcon(new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\tiger_plush.gif"));
+					plate.setIcon(plates_all_broken);
+					prize.setIcon(tiger_plush);
 					PA.setText("Play Again");
 
 				}
 				else if(n == 1)
 				{
-					plate.setIcon(new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\plates_two_broken.gif"));
-					prize.setIcon(new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\sticker.gif"));
+					plate.setIcon(plates_two_broken);
+					prize.setIcon(sticker);
 					PA.setText("Play Again");
 
 				}	
@@ -98,8 +107,8 @@ public class BreakAPlate {
 				
 				else if (en == "Play Again") 
 				{
-					plate.setIcon(new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\plates.gif"));
-					prize.setIcon(new ImageIcon("C:\\Users\\105118501\\git\\cs30\\CH10\\src\\img\\placeholder.gif"));
+					plate.setIcon(plates);
+					prize.setIcon(placeholder);
 					PA.setText("Play");
 					
 				}
